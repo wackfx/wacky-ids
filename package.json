@@ -15,7 +15,7 @@
     "tiny"
   ],
   "main": "src/index.ts",
-  "types": "dist/wacky-ids.d.ts",
+  "types": "dist/types/index.d.ts",
   "exports": {
     "types": "./dist/types/index.d.ts",
     "browser": "./dist/wacky-ids.mjs",
