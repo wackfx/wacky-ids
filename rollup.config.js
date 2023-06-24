@@ -9,12 +9,12 @@ function configure(esm) {
             }),
         ],
         output: esm
-            ? { format: 'es', dir: 'dist', entryFileNames: 'short-uuid.mjs', sourcemap: true }
+            ? { format: 'es', dir: 'dist', entryFileNames: 'wacky-ids.mjs', sourcemap: true }
             : {
                 format: 'umd',
                 name: 'genMapping',
                 dir: 'dist',
-                entryFileNames: 'short-uuid.umd.js',
+                entryFileNames: 'wacky-ids.umd.js',
                 sourcemap: true
             },
         context: 'globalThis',

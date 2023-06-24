@@ -266,4 +266,4 @@
     exports.ShortUUID = ShortUUID;
 
 }));
-//# sourceMappingURL=short-uuid.umd.js.map
+//# sourceMappingURL=wacky-ids.umd.js.map

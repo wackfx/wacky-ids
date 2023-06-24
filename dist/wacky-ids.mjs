@@ -258,4 +258,4 @@ const ShortUUID = (_options) => {
 };
 
 export { ShortUUID };
-//# sourceMappingURL=short-uuid.mjs.map
+//# sourceMappingURL=wacky-ids.mjs.map
