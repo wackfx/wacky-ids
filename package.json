@@ -1,0 +1,47 @@
+{
+  "name": "wacky-ids",
+  "version": "1.0.0",
+  "description": "Random or sequential short UUID",
+  "type": "module",
+  "keywords": [
+    "short",
+    "random",
+    "uid",
+    "uuid",
+    "guid",
+    "node",
+    "unique id",
+    "generator",
+    "tiny"
+  ],
+  "main": "src/index.ts",
+  "types": "dist/wacky-ids.d.ts",
+  "exports": {
+    "types": "./dist/types/index.d.ts",
+    "browser": "./dist/wacky-ids.mjs",
+    "require": "./dist/wacky-ids.umd.js",
+    "import": "./dist/wacky-ids.mjs"
+  },
+  "scripts": {
+    "prebuild": "rm -rf dist",
+    "build": "run-s -n build:*",
+    "build:rollup": "rollup -c rollup.config.js",
+    "build:ts": "tsc --project tsconfig.build.json",
+    "lint": "run-s -n lint:*",
+    "lint:prettier": "npm run test:lint:prettier -- --write",
+    "lint:ts": "npm run test:lint:ts -- --fix",
+    "pretest": "run-s build:rollup"
+  },
+  "devDependencies": {
+    "@types/node": "^20.3.1",
+    "@typescript-eslint/eslint-plugin": "^5.60.0",
+    "@typescript-eslint/parser": "^5.60.0",
+    "@rollup/plugin-typescript": "^11.1.1",
+    "rollup": "^3.25.1",
+    "typescript": "^5.1.3",
+    "prettier": "^2.8.8",
+    "npm-run-all": "^4.1.5",
+    "eslint": "^8.43.0",
+    "eslint-config-prettier": "^8.8.0"
+  }
+}
